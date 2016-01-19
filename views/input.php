@@ -22,7 +22,7 @@
 <?php if ( !empty( $datalist ) ) : ?>
 <datalist id="<?php echo $name ?>-datalist">
 	<?php foreach ( $datalist as $dataitem ) : ?>
-	<option value="Firefox">
+	<option value="<?php echo $dataitem ?>">
 	<?php endforeach; ?>
 </datalist>
 <?php endif; ?>
