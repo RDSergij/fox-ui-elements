@@ -93,7 +93,7 @@ if ( ! class_exists( 'UI_Input_Fox' ) ) {
 				unset( $this->settings['datalist'] );
 			}
 
-			$name = $datalist = $this->settings['name'];
+			$datalist_id = $this->settings['id'] . '-datalist';
 
 			$attributes = '';
 			foreach ( $this->settings as $key => $value ) {
