@@ -14,13 +14,13 @@
 <label><?php echo $label ?></label>
 <?php endif; ?>
 <input <?php echo $attributes ?>
-	<?php if ( !empty( $datalist ) ) : ?>
-	datalist="<?php echo $name ?>-datalist"
+	<?php if ( ! empty( $datalist ) ) : ?>
+	datalist="<?php echo $datalist_id ?>"
 	<?php endif; ?>
 >
 
-<?php if ( !empty( $datalist ) ) : ?>
-<datalist id="<?php echo $name ?>-datalist">
+<?php if ( ! empty( $datalist ) ) : ?>
+<datalist id="<?php echo $datalist_id ?>">
 	<?php foreach ( $datalist as $dataitem ) : ?>
 	<option value="<?php echo $dataitem ?>">
 	<?php endforeach; ?>
